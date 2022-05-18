@@ -19,3 +19,6 @@ Route::get('/', function () {
 Route::get('/hello', function () {
     return view('hello');
 });
+Route::get('/page', function () {
+    return view('page', ['name' => 'Monvīds']);
+});
