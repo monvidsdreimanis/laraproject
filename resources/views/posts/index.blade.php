@@ -6,6 +6,7 @@
             <th>Title</th>
             <th>Body</th>
             <th>Author</th>
+            <th>Comments</th>
             <th>Action</th>
         </tr>
     </thead>
@@ -15,6 +16,7 @@
             <td>{{$post->id}}</td>
             <td>{{$post->title}}</td>
             <td>{{$post->body}}</td>
+            <td>{{$post->comments->count()}}</td>
             <td>{{$post->author_name}}</td>
             <td>
                 <a href={{ route('posts.destroy', ['post'=>$post->id])}}>Delete</a>
